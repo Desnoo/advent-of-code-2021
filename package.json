@@ -1,0 +1,33 @@
+{
+  "name": "advent-of-code-2021",
+  "version": "0.0.1",
+  "description": "Implementation of advent of code 2021.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch-ts": "tsc -w",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Desnoo/advent-of-code-2021.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Tino Siegmund",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Desnoo/advent-of-code-2021/issues"
+  },
+  "homepage": "https://github.com/Desnoo/advent-of-code-2021#readme",
+  "devDependencies": {
+    "@types/eslint": "8.2.1",
+    "@types/node": "16.11.11",
+    "@typescript-eslint/eslint-plugin": "5.5.0",
+    "@typescript-eslint/parser": "5.5.0",
+    "eslint": "8.4.0",
+    "typescript": "^4.5.2"
+  }
+}

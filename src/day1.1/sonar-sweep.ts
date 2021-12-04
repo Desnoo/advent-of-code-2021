@@ -3,9 +3,9 @@ import * as readline from "readline";
 
 export default class SonarSweep {
 
-    public async getCount(): Promise<number> {
+    public async getCount(path: string): Promise<number> {
 
-        const fileStream = fs.createReadStream("assets/day1/input.txt", "utf8");
+        const fileStream = fs.createReadStream(path, "utf8");
         const rl         = readline.createInterface({
                                                         input:     fileStream,
                                                         crlfDelay: Infinity
@@ -29,9 +29,3 @@ export default class SonarSweep {
         return count;
     }
 }
-
-( async () => {
-    const instance = new SonarSweep();
-    const count    = await instance.getCount();
-    console.log(`The number of times a depth measurement increases is ${ count }`);
-} )();
